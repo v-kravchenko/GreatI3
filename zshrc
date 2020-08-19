@@ -3,15 +3,53 @@
 
 # Check if oh-my-zsh is installed
 if [[ ! -d $HOME/.oh-my-zsh ]]; then
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-  mv .zshrc.pre-oh-my-zsh .zshrc
-  if [[ ! -d /usr/share/fzf ]]; then
-    # Installing FZF on arch, if fzf doesn't exist
-    if [[ $(uname --kernel-release | grep "arch") ]]; then
-      sudo pacman -Sy fzf
-    fi
-  fi
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+	mv .zshrc.pre-oh-my-zsh .zshrc
+	if [[ ! -d /usr/share/fzf ]]; then
+		# Installing FZF on arch, if fzf doesn't exist
+		if [[ $(uname --kernel-release | grep "arch") ]]; then
+			sudo pacman -Sy fzf
+		fi
+	fi
 fi
+
+# 256bit colorscheme support
+if [ "$TERM" != "xterm-256color" ]; then
+	export TERM=xterm-256color
+fi
+
+
+### TODO
+if [[ -e $HOME/.todo ]]; then
+	cat .todo | column -t -N ID,Task -s '\t'
+else
+	echo "If you want to have todo in your terminal\n enter todo --help"
+	touch $HOME/.todo
+fi
+todoFunction() {
+	case $1 in
+		"--help")
+			echo -e "\033[1mtodo\033[0m - is your todo in any terminal and any linux, because it is in your .zshrc\n"
+			echo -e "\tFor creating a task you need to type 'todo --create \"nameOfTask\""
+			echo -e "\tFor deleting a task you need to type 'todo --delete and ID of a task"
+			;;
+		"--create")
+			echo -e "Write a task"
+			read task
+			echo -e "$(($(cat .todo | wc -l) + 1))\t $task" >> $HOME/.todo
+			;;
+		"-c")
+			echo -e "Write a task"
+			read task
+			echo -e "$(($(cat .todo | wc -l) + 1))\t $task" >> $HOME/.todo
+			;;
+		"")
+			cat .todo | column -t -N ID,Task -s '\t'
+			;;
+	esac
+}
+alias -g todo=todoFunction
+###
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/username77177/.oh-my-zsh"
@@ -112,3 +150,10 @@ source $ZSH/oh-my-zsh.sh
 
 # FZF
 source /usr/share/fzf/completion.zsh && source /usr/share/fzf/key-bindings.zsh
+
+
+# Autolaunch tmux
+#if [[ -e /usr/bin/tmux ]]; then
+	#[[ $- != *i* ]] && return
+	#[[ -z "$TMUX" ]] && exec tmux
+#fi

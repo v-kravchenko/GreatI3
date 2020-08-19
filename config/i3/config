@@ -49,11 +49,11 @@ for_window [class=".*"] focus
 ## Keyboard Settings ##
 # Apps
 bindsym $mod+Return exec kitty
-bindsum $mod+Mod1+r exec "kitty sh -c 'ranger'"
+bindsym $mod+Mod1+v exec "kitty sh -c 'ranger'"
 bindsym $mod+Mod1+g exec google-chrome-stable
 bindsym $mod+Mod1+c exec code
-bindsym $mod+Mod1+v exec dolphin
 bindsym Print exec spectacle
+bindsym $mod+Print scrot -s --quality 10 -e 'mv $f ~/Pictures/Screenshot_`date +%m-%d-%y_%R:%S`.png' && notify-send --urgency normal "Scrot" "Screenshot of a window have been captured"
 
 # Select window, open new app
 bindsym Mod1+Tab exec "rofi -modi window,drun,ssh,combi -show-icons -sort -theme ~/.config/rofi/GreatI3.rasi -show combi"
@@ -125,9 +125,9 @@ bindsym $mod+v split t
 # Lockscreen after 10min delay
 exec --no-startup-id "$HOME/.config/i3/lockscreen"
 # Convert background gif to jpg
-exec --no-startup-id convert -verbose $HOME/.config/i3/{gif.gif,gif.jpg}
+# exec --no-startup-id convert -verbose $HOME/.config/i3/{gif.gif,gif.jpg}
 # Generate Colorscheme
-exec_always --no-startup-id wal -i $HOME/.config/i3/gif-0.jpg
+# exec_always --no-startup-id wal -i $HOME/.config/i3/gif-0.jpg
 # Compositor
 exec_always --no-startup-id "killall -q picom; picom --config $HOME/.config/picom.conf"
 # Language

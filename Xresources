@@ -36,7 +36,10 @@ URxvt*color14: #ffc857
 URxvt*color15: #fffceb
 
 ! ## Extensions
-URxvt.perl-ext-common: default,matcher,tabbed
+URxvt.perl-ext-common: default,matcher,tabbed,selection-to-clipboard,pasta,matcher,keyboard-select
+! Copy and paste
+URxvt.keysym.Control-Shift-V:     perl:pasta:paste
+URxvt.clipboard.autocopy: true
 
 ! URLs
 URxvt.url-launcher: /usr/bin/xdg-open
