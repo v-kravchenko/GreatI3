@@ -132,6 +132,10 @@ exec --no-startup-id "$HOME/.config/i3/lockscreen"
 exec_always --no-startup-id "killall -q picom; picom --config $HOME/.config/picom.conf"
 # Language
 exec --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:win_space_toggle
+# Automount USB
+exec --no-startup-id udiskie
+# Red Light in night time
+exec --no-startup-id redshift-gtk
 # Dunst
 exec --no-startup-id dunst
 # Kitty
@@ -159,10 +163,9 @@ gaps outer 4
 
 ### Topbar and color theme ###
 # Color theme of borders
-client.focused              #bf616a #2f343f #d8dee8 #bf616a #d8dee8
-client.focused_inactive     #2f343f #kf343f #d8dee8 #2f343f #2f343f
-client.unfocused            #2f343f #2f343f #d8dee8 #2f343f #2f343f
-client.urgent               #2f343f #2f343f #d8dee8 #2f343f #2f343f
-client.placeholder          #2f343f #2f343f #d8dee8 #2f343f #2f343f
-client.background           #2f343f
-
+client.focused              #292f36 #292f36 #ffffff #ffc857 #292f36
+client.focused_inactive     #292f36 #292f36 #ffffff #292f36 #292f36
+client.unfocused            #292f36 #292f36 #ffffff #292f36 #292f36
+client.urgent               #292f36 #292f36 #ffffff #292f36 #292f36
+client.placeholder          #292f36 #292f36 #ffffff #292f36 #292f36
+client.background           #292f36

@@ -30,7 +30,7 @@ GreatI3 - проект, который я сделал просто потому
 Для того, чтобы установить GreatI3 на Arch Linux, вам нужно выполнить следующий скрипт:
 ```bash
 # Installing Packages
-sudo pacman -Sy --noconfirm i3 i3-gaps base-devel rofi okular feh vim code picom kitty ranger git xdotool xautolock i3lock-color scrot imagemagick rxvt-unicode urxvt-perls
+sudo pacman -Sy --noconfirm i3 i3-gaps base-devel rofi okular feh vim code picom kitty ranger git xdotool xautolock i3lock-color scrot imagemagick rxvt-unicode urxvt-perls udiskie redshift
 # Cloning repository
 git clone https://github.com/us3rn4me-profile/GreatI3.git
 # Changing directory
@@ -82,6 +82,8 @@ rm -rf xwinwrap
 | i3lock-color | Улучшенная версия i3lock. Программа нужна для блокировки компьютера и ввода пароля |
 | scrot | Минималистиченое приложение для создания скриншотов |
 | imagemagick | Программа, которая поможет при взаимодействии с картинками (блюрит их заранее, конвертирует, меняет разрешение) |
+| udiskie | Автоподключение внешних устройств |
+| redshift | Приятный свет ночью |
 
 
 ## Потребление RAM
