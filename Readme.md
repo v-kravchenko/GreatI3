@@ -33,6 +33,8 @@ GreatI3 - проект, который я сделал просто потому
 sudo pacman -Sy --noconfirm i3 i3-gaps base-devel rofi okular feh vim code picom kitty ranger git xdotool xautolock i3lock-color scrot imagemagick rxvt-unicode urxvt-perls udiskie redshift
 # Cloning repository
 git clone https://github.com/us3rn4me-profile/GreatI3.git
+# Cloning fonts
+curl https://github.com/todylu/monaco.ttf/blob/master/monaco.ttf --output ~/.local/share/fonts/monaco.ttf
 # Changing directory
 cd GreatI3
 # Copying main configs for urxvt and zsh

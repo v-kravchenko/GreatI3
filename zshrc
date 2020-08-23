@@ -25,29 +25,29 @@ if [[ -e $HOME/.todo ]]; then
 else
 	echo "If you want to have todo in your terminal\n enter todo --help"
 	touch $HOME/.todo
-fi
-todoFunction() {
-	case $1 in
-		"--help")
-			echo -e "\033[1mtodo\033[0m - is your todo in any terminal and any linux, because it is in your .zshrc\n"
-			echo -e "\tFor creating a task you need to type 'todo --create \"nameOfTask\""
-			echo -e "\tFor deleting a task you need to type 'todo --delete and ID of a task"
-			;;
-		"--create")
-			echo -e "Write a task"
-			read task
-			echo -e "$(($(cat .todo | wc -l) + 1))\t $task" >> $HOME/.todo
-			;;
-		"-c")
-			echo -e "Write a task"
-			read task
-			echo -e "$(($(cat .todo | wc -l) + 1))\t $task" >> $HOME/.todo
-			;;
-		"")
-			cat .todo | column -t -N ID,Task -s '\t'
-			;;
-	esac
-}
+	fi
+	todoFunction() {
+		case $1 in
+			"--help")
+				echo -e "\033[1mtodo\033[0m - is your todo in any terminal and any linux, because it is in your .zshrc\n"
+				echo -e "\tFor creating a task you need to type 'todo --create \"nameOfTask\""
+				echo -e "\tFor deleting a task you need to type 'todo --delete and ID of a task"
+				;;
+			"--create")
+				echo -e "Write a task"
+				read task
+				echo -e "$(($(cat .todo | wc -l) + 1))\t $task" >> $HOME/.todo
+				;;
+			"-c")
+				echo -e "Write a task"
+				read task
+				echo -e "$(($(cat .todo | wc -l) + 1))\t $task" >> $HOME/.todo
+				;;
+			"")
+				cat .todo | column -t -N ID,Task -s '\t'
+				;;
+		esac
+	}
 alias -g todo=todoFunction
 ###
 
@@ -154,6 +154,6 @@ source /usr/share/fzf/completion.zsh && source /usr/share/fzf/key-bindings.zsh
 
 # Autolaunch tmux
 #if [[ -e /usr/bin/tmux ]]; then
-	#[[ $- != *i* ]] && return
-	#[[ -z "$TMUX" ]] && exec tmux
+#[[ $- != *i* ]] && return
+#[[ -z "$TMUX" ]] && exec tmux
 #fi

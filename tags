@@ -1,0 +1,57 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/a3c87ab5/
+App Launcher	Readme.md	/^## App Launcher$/;"	s
+Lockscreen	Readme.md	/^### Lockscreen$/;"	S
+backend	config/picom.conf	/^backend = "glx";$/;"	k
+blur	config/picom.conf	/^blur: {$/;"	k
+changeWiFiNetwork	scripts/rofiQuickLaunch.sh	/^function changeWiFiNetwork() {$/;"	f
+corners	config/picom.conf	/^detect-rounded-corners = true;$/;"	k
+dbe	config/picom.conf	/^dbe                    = false;$/;"	k
+delta	config/picom.conf	/^fade-delta           = 4;$/;"	k
+dropdown_menu	config/picom.conf	/^dropdown_menu        = { shadow = false; };$/;"	k
+exclude	config/picom.conf	/^fade-exclude         = [];$/;"	k
+exclude	config/picom.conf	/^focus-exclude          = [];$/;"	k
+exclude	config/picom.conf	/^opacity-exclude           = [$/;"	k
+exclude	config/picom.conf	/^shadow-exclude       = [$/;"	k
+fading	config/picom.conf	/^fading               = true;$/;"	k
+fence	config/picom.conf	/^xrender-sync-fence = true;$/;"	k
+focused	config/picom.conf	/^mark-ovredir-focused   = true;$/;"	k
+focused	config/picom.conf	/^mark-wmwin-focused     = true;$/;"	k
+front	config/picom.conf	/^glx-copy-from-front        = false;$/;"	k
+installPackages	scripts/rofiQuickLaunch.sh	/^function installPackages() {$/;"	f
+leader	config/picom.conf	/^detect-client-leader   = true;$/;"	k
+makeScreenshot	scripts/rofiQuickLaunch.sh	/^function makeScreenshot() {$/;"	f
+opacity	config/picom.conf	/^active-opacity            = 1;$/;"	k
+opacity	config/picom.conf	/^detect-client-opacity  = true;$/;"	k
+opacity	config/picom.conf	/^frame-opacity             = 0.5;$/;"	k
+opacity	config/picom.conf	/^inactive-opacity          = 0.899;$/;"	k
+opacity	config/picom.conf	/^shadow-opacity       = 0.1505;$/;"	k
+override	config/picom.conf	/^inactive-opacity-override = false;$/;"	k
+popup_menu	config/picom.conf	/^popup_menu           = { shadow = false; };$/;"	k
+possible	config/picom.conf	/^unredir-if-possible    = false;$/;"	k
+radius	config/picom.conf	/^shadow-radius        = 12;$/;"	k
+rate	config/picom.conf	/^refresh-rate           = 0;$/;"	k
+select_by_word_characters	config/kitty/kitty.conf	/^select_by_word_characters :@-.\/_~?&=%+#$/;"	k
+shadow	config/picom.conf	/^shadow               = true;$/;"	k
+shaped	config/picom.conf	/^shadow-ignore-shaped = true;$/;"	k
+stencil	config/picom.conf	/^glx-no-stencil             = true;$/;"	k
+step	config/picom.conf	/^fade-in-step         = 0.02;$/;"	k
+step	config/picom.conf	/^fade-out-step        = 0.02;$/;"	k
+transient	config/picom.conf	/^detect-transient       = true;$/;"	k
+utility	config/picom.conf	/^utility              = { shadow = false; };$/;"	k
+vsync	config/picom.conf	/^vsync                  = true;$/;"	k
+win	config/picom.conf	/^use-ewmh-active-win    = true;$/;"	k
+wintypes	config/picom.conf	/^wintypes: {$/;"	k
+x	config/picom.conf	/^shadow-offset-x      = 4;$/;"	k
+y	config/picom.conf	/^shadow-offset-y      = 5;$/;"	k
+Консоль	Readme.md	/^## Консоль$/;"	s
+Потребление RAM	Readme.md	/^## Потребление RAM$/;"	s
+Топбар	Readme.md	/^## Топбар$/;"	s
+Уведомления	Readme.md	/^## Уведомления$/;"	s
+Фоновая картинка	Readme.md	/^## Фоновая картинка$/;"	s
