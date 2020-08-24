@@ -119,6 +119,9 @@ bindsym $mod+x exec xdotool getwindowfocus windowkill
 # Floating vector
 bindsym $mod+v split t
 
+# Make all windows tiling in the workspace
+bindsym $mod+i [workspace=$workspace1] floating toggle
+
 
 
 ### Autostart ###

@@ -18,7 +18,7 @@ GreatI3 - проект, который я сделал просто потому
 * [Iosevka](https://github.com/be5invis/Iosevka)
 * [FontAwesome](https://fontawesome.com/)
 
-*Гиф*: 
+*Гиф*:
 * [Treefall Gif](https://github.com/loki7990/Tranquility/blob/master/.config/bspwm/treefall.gif)
 
 *Цветовая палитра*:
@@ -138,3 +138,36 @@ rm -rf xwinwrap
 ![Desktop Screenshot](assets/Desktop.png)
 
 ![Lockscreen Screenshot](assets/lockscreen.png)
+
+## Редакторы
+Я в основном пользуюсь только Vim и VSCode, потому что это 2 самых удобных редактора. Первый превосходен в скорости обработки и редактирования, другой обладает хорошей визуальностью, а также очень расширяем.
+### VSCode
+Данный редактор я затачивал под минимализм. Я хочу чтобы во время редактирования меня ничего не отвлекало, а также чтобы сам редактор был чуть шустрее, чем он есть по умолчанию.
+На данный момент редактор выглядит так:
+
+![](assets/VSCode_screenshot.png)
+
+* Убрана боковая панель
+* Убраны крестики на табах
+* Всё скрыто по умолчанию
+* Шрифты
+	* JetBrains Mono
+	* Fira Code
+	* Ubuntu Mono
+	* Hack
+* Курсор плавно мигает
+* Курсор плавно перемещается
+* Скобки подсвечиваются, если они стоят рядом и только
+
+**Дополнения**
+
+* Prettier
+* JSHint
+* Live Server
+* Better Comments
+* Brackets Pair Colorizer
+* Project Manager
+
+**Тема**
+* Material Theme
+* Material Theme Icons
